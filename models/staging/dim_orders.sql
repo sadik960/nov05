@@ -7,7 +7,7 @@ select a.c_key,
 a.c_details,
 a.c_phone,
 b.ordercustkey,
-b.O_ORDERSTATUS
+b.O_ORDERSTATUS,row_number() over(order by a.c_key ) as r
 from {{ref('stg_customer')}} as a
 inner join {{ref('orders')}} b
 on a.c_key=b.ordercustkey
