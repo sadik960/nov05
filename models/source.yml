@@ -8,7 +8,7 @@ sources:
         - name: raw_order
     - name: snapshot_tables
       database: "{{('db1')}}"
-      schema: raw_dev1
+      schema: dbt_dev
       tables:
         - name: snap_customers_check
 
