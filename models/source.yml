@@ -6,3 +6,9 @@ sources:
       tables:
         - name: raw_customer
         - name: raw_order
+    - name: snapshot_tables
+      database: "{{('db1')}}"
+      schema: raw_dev1
+      tables:
+        - name: snap_customers_check
+
